@@ -1,0 +1,95 @@
+table{
+	border: 2px solid black;
+	border-collapse: collapse;
+	margin-bottom: 25px;
+}
+td, th{
+	padding: 10px;
+	border: 1px solid black;
+	text-align: center;
+}
+th{
+	cursor: pointer;
+	background-color: #d1d1ff;
+}
+tr:nth-child(even){
+	background-color: #f1f3f1;
+}
+#button{
+	height: 40px;
+	width: 125px;
+	padding: 10px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	cursor: pointer;
+	background: #F2973B;
+	color: white;
+	font-size: 15px;
+	border-radius: 10px;
+	vertical-align: middle;
+	text-align: center;
+}
+/*
+ *additional id for redefine tr:nth-child(even) selector
+*/
+#container .focus{
+	background-color: lightgrey;
+}
+
+
+
+/*
+ *here go styles for decorating menu
+*/
+.menu-container{
+	width:350px;
+	position: fixed;
+	top:75px;
+	left:-350px;
+	transition: ease-in-out left 1s;
+}
+.menu-open{
+	left:0;
+}
+.arrow{
+	position: absolute;
+	top:0;
+	right: -40px;
+	padding: 7px;
+	border-radius: 50%;
+	background-color: #ffbf00;
+	font-size: 15px;
+	line-height: 1;
+	color: white;
+	cursor: pointer;
+	transition: ease-in-out background-color 0.7s,
+				ease-in-out transform 1s;
+}
+.arrow-active{
+	background-color: #0040ff;
+	transform: rotate(180deg);
+
+}
+
+ul{
+	list-style-type: none;
+	padding: 0;
+	margin-top: 0;
+}
+ul li{
+	background-color: lightgrey;
+	border: 1px solid grey;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 5px;
+	margin-left: 15px; 
+	cursor: pointer;
+
+}
+li>ul{
+	display: none;
+}
+.visible{
+	display: block;
+}
+/**end styles for menu/
